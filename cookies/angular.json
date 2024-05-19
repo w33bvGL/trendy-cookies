@@ -49,7 +49,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/trendy-cookes/"
+              "baseHref": "/trendy-cookies/"
             },
             "development": {
               "optimization": false,
