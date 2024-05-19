@@ -1,0 +1,70 @@
+<!-- order init -->
+<section class="order" id="order">
+  <img src="../../../assets/img/line3.png" alt="line2" class="line3" />
+  <div class="container">
+    <div class="common-title">Закажите печенье</div>
+    <img
+      src="../../../assets/img/breadcrumbs.png"
+      alt="Крошки"
+      class="order-bg-image"
+    />
+    <div class="order-block">
+      <form class="order-form" [formGroup]="orderForm">
+        <div class="order-form-text">
+          Откройте для себя волшебство вкуса с нашим премиальным печеньем!
+          Закажите прямо сейчас и окунитесь в мир сладких наслаждений.
+        </div>
+        <div class="order-form-inputs">
+          <input
+            type="text"
+            id="product"
+            placeholder="Выберите печенье"
+            formControlName="product"
+            value="wdwd"
+            [class]="{
+              error:
+                (orderForm.get('product')?.invalid &&
+                  orderForm.get('product')?.dirty) ||
+                orderForm.get('product')?.touched
+            }"
+            readonly
+          />
+          <input
+            type="text"
+            id="name"
+            placeholder="Ваше имя"
+            formControlName="name"
+            [class]="{
+              error:
+                (orderForm.get('name')?.invalid &&
+                  orderForm.get('name')?.dirty) ||
+                orderForm.get('name')?.touched
+            }"
+          />
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Ваш телефон"
+            formControlName="phone"
+            [class]="{
+              error:
+                (orderForm.get('phone')?.invalid &&
+                  orderForm.get('phone')?.dirty) ||
+                orderForm.get('phone')?.touched
+            }"
+          />
+          <button class="button violet-button" (click)="confrimOrder()" [disabled]="!orderForm.valid">
+            Оформить заказ
+          </button>
+        </div>
+      </form>
+      <div class="order-block-image">
+        <img
+          src="../../../assets/img/order.png"
+          alt="ЗАКАЗОВАЕМ!!!"
+          class="order-image"
+        />
+      </div>
+    </div>
+  </div>
+</section>

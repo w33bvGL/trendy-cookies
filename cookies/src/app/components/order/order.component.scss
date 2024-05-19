@@ -1,0 +1,84 @@
+.order {
+  padding-bottom: 102px;
+  position: relative;
+}
+
+.order .container {
+  position: relative;
+}
+
+.order .order-block {
+  margin-top: 103px;
+  background-color: rgba(255, 255, 255, 30%);
+  backdrop-filter: blur(50px);
+  display: flex;
+}
+
+.order .order-form {
+  margin-left: 200px;
+  max-width: 387px;
+  padding: 40px 0 44px 0;
+  /* border box есть уже*/
+}
+
+.order .order-form-text {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.order .order-form .order-form-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.order .order-form .order-form-inputs input {
+  border: 1px solid var(--cl-white);
+  border-radius: 60px;
+  margin-bottom: 16px;
+  padding: 24px 22px;
+  font-size: 18px;
+  width: 385px;
+  height: 68px;
+  background-color: transparent;
+  outline: none;
+  color: var(--cl-white);
+}
+
+.order .order-form .order-form-inputs input:nth-child(1)::placeholder {
+  color: var(--cl-white);
+}
+
+.order .order-form .order-form-inputs input:nth-child(2)::placeholder,
+.order .order-form .order-form-inputs input:nth-child(3)::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.order .order-form-inputs .button.violet-button {
+  width: 387px;
+  height: 71px;
+}
+
+.order .order-block-image {
+  height: 501px;
+  margin-left: 109px;
+}
+
+.order .order-image {
+  height: 559px;
+  top: -58px;
+  position: relative;
+}
+
+.order-bg-image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 810px);
+  z-index: -1;
+}
+
+
+.order-form-inputs input.error {
+  border-color: red;
+}

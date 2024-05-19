@@ -1,0 +1,29 @@
+.main-content {
+  padding: 161px 0 200px 0;
+}
+
+.main-content .main-info {
+  max-width: 811px;
+}
+
+.main-content .main-title {
+  font-family: 'Steppe-ExtraBold', sans-serif;
+  font-size: 90px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+
+.main-content .main-text {
+  max-width: 697px;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.main-content .main-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  
+}

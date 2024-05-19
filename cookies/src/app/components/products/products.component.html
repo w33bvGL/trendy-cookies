@@ -1,0 +1,41 @@
+<!-- products init -->
+<section class="products" id="products">
+  <div class="container">
+    <img src="../../../assets/img/line2.png" alt="line2" class="line2" />
+    <div class="common-title">Выберите печенье</div>
+    <div class="sugar-free">
+      <div>Все</div>
+      <input type="checkbox" id="switch" (change)="switchSugarFree($event)" />
+      <label for="switch"></label>
+      <div>Без сахара</div>
+    </div>
+    <div class="products-items">
+      <div class="product-item" *ngFor="let product of productsList">
+        <div class="products-item-image">
+          <img src="{{ product.image }}" alt="{{ product.title }}" />
+        </div>
+        <div class="products-item-details">
+          <div class="products-item-title">{{ product.title }}</div>
+          <div class="products-item-text">{{ product.text }}</div>
+          <div class="products-item-extra">
+            <div class="products-item-info">
+              <div
+                class="products-item-price"
+                [attr.data-base-price]="product.price"
+              >
+                {{ product.price }}
+              </div>
+              <div class="prodicts-item-weight">{{ product.weight }}</div>
+            </div>
+            <button
+              class="button violet-button"
+              (click)="simpleBuy('order', product.title, product.price)"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

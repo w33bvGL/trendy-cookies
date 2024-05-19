@@ -1,0 +1,33 @@
+.love {
+  padding: 64px 0 150px 0;
+}
+
+.love .love-items {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.love .love-items .love-item {
+  width: 590px;
+  height: 453px;
+}
+
+.love .love-items .love-item.love-item-white {
+  background-color: var(--cl-white);
+  padding: 110px 80px;
+  box-sizing: border-box;
+  color: var(--cl-5d3427);
+}
+
+.love .love-items .love-item .love-item-title {
+  font-family: "Steppe-ExtraBold", sans-serif;
+  font-size: 24px;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+
+.love .love-items .love-item .love-item-text {
+  font-size: 18px;
+  line-height: 130%;
+}
